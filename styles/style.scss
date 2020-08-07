@@ -57,6 +57,29 @@ body {
 
 // Header styles start
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.2s linear;
+  z-index: 100;
+
+  &_active {
+    background: #262729;
+
+    & .nav__link-first {
+      color: #828282;
+    }
+
+    & .nav__link {
+      &:hover,
+      &:focus,
+      &:active {
+        color: rgb(223, 219, 219);
+      }
+    }
+  }
+
   &__list {
     padding: 0;
     list-style: none;
@@ -87,7 +110,6 @@ body {
   &__line {
     border: 1px solid #828282;
     transform: matrix(1, 0, 0, 1, 0, 0);
-    margin-bottom: 40px;
   }
 }
 // Header styles end
@@ -98,6 +120,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 130px;
     margin-bottom: 31px;
   }
 
@@ -151,7 +174,6 @@ body {
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 107px;
-    margin-bottom: 91px;
   }
 
   &__title {
@@ -170,6 +192,7 @@ body {
   &__title {
     @extend %section-title;
     margin-bottom: 69px;
+    padding-top: 110px;
   }
 
   &__intro {
@@ -183,16 +206,14 @@ body {
     justify-content: space-between;
     margin-bottom: 110px;
   }
-
-  &__card {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__img {
-    margin-left: 20px;
     margin-bottom: 26px;
   }
 
@@ -280,7 +301,7 @@ body {
     &:hover,
     &:focus,
     &:active {
-      opacity: 0.8;
+      opacity: 0.7;
       cursor: pointer;
     }
   }
