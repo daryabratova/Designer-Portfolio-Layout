@@ -1,0 +1,313 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/gilroy-bold.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy-bold.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/gilroy-bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/gilroy-bold.woff") format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../fonts/gilroy-bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/gilroy-bold.svg#gilroy-bold")
+      format("svg"); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/gilroy-medium.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy-medium.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/gilroy-medium.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/gilroy-medium.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../fonts/gilroy-medium.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/gilroy-medium.svg#gilroy-medium")
+      format("svg"); /* Chrome < 4, Legacy iOS */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Gilroy-Bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: black;
+}
+
+.layout {
+  width: 940px;
+  margin: 0 auto;
+}
+
+%section-title {
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  margin: 0;
+}
+
+// Header styles start
+.nav {
+  &__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+  }
+
+  &__link {
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #828282;
+    text-decoration: none;
+
+    &-first {
+      color: black;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: rgb(58, 58, 58);
+    }
+  }
+
+  &__line {
+    border: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    margin-bottom: 40px;
+  }
+}
+// Header styles end
+
+// Home styles start
+.home {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 31px;
+  }
+
+  &__name {
+    font-size: 47.3392px;
+    line-height: 59px;
+    margin: 0;
+  }
+
+  &__desc-el {
+    margin: 0;
+    font-family: Gilroy-Medium;
+  }
+
+  &__lang {
+    position: relative;
+    bottom: 28px;
+    left: 26px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #828282;
+    transform: rotate(-90deg);
+    margin: 0;
+
+    &-eng {
+      color: black;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+
+  &__img {
+    margin-bottom: 104px;
+  }
+}
+// Home styles end
+
+// About me styles start
+.about-me {
+  background: #f6f6f6;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 485px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 107px;
+    margin-bottom: 91px;
+  }
+
+  &__title {
+    @extend %section-title;
+  }
+
+  &__info {
+    font-family: Gilroy-Medium;
+    text-align: center;
+  }
+}
+// About me styles end
+
+// Skills styles start
+.skills {
+  &__title {
+    @extend %section-title;
+    margin-bottom: 69px;
+  }
+
+  &__intro {
+    font-family: Gilroy-Medium;
+    text-align: center;
+    margin-bottom: 83.5px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card {
+  &__img {
+    margin-left: 20px;
+    margin-bottom: 26px;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    margin: 0;
+    margin-bottom: 41.5px;
+  }
+
+  &__star {
+    display: inline;
+  }
+}
+// Skills styles end
+
+// Portfolio styles start
+.portfolio {
+  background: #f6f6f6;
+
+  &__title {
+    @extend %section-title;
+    padding-top: 112px;
+    margin-bottom: 47px;
+  }
+
+  &__img {
+    margin-bottom: 45px;
+  }
+
+  &__link {
+    color: black;
+  }
+
+  &__page-name {
+    font-family: Gilroy-Medium;
+    text-align: center;
+    text-decoration-line: underline;
+    padding-bottom: 100px;
+    margin: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
+// Portfolio styles end
+
+// Contacts styles start
+.contacts {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 114px;
+    margin-bottom: 123px;
+  }
+
+  &__title {
+    @extend %section-title;
+    margin-bottom: 26px;
+  }
+
+  &__desc {
+    margin: 0 auto;
+    font-family: Gilroy-Medium;
+    text-align: center;
+    width: 275px;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    border: none;
+    color: white;
+    background: url(../img/button.png);
+    width: 181px;
+    height: 42px;
+    margin: 0 auto;
+    margin-bottom: 86px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 304px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+  }
+
+  &__link {
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  &__message {
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    text-align: center;
+    color: #828282;
+  }
+}
+// Contacts styles end
