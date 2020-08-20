@@ -347,6 +347,170 @@ body {
   color: #828282;
 }
 
+@media (min-width: 550px) and (max-width: 996px) {
+  body {
+    font-size: 20px;
+  }
+  .layout {
+    width: 550px;
+  }
+  .about-me__title, .skills__title, .portfolio__title, .contacts__title {
+    font-family: Gilroy-Bold;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    margin: 0;
+  }
+  .nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
+    z-index: 100;
+  }
+  .nav_active {
+    background: #262729;
+  }
+  .nav_active .nav__link-first {
+    color: #828282;
+  }
+  .nav_active .nav__link:hover, .nav_active .nav__link:focus, .nav_active .nav__link:active {
+    color: #dfdbdb;
+  }
+  .nav__list {
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 31px;
+  }
+  .nav__link {
+    font-family: Gilroy-Bold;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #828282;
+    text-decoration: none;
+  }
+  .nav__link-first {
+    color: black;
+  }
+  .nav__link:hover, .nav__link:focus, .nav__link:active {
+    color: #3a3a3a;
+  }
+  .nav__line {
+    border: 1px solid #828282;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  .home__info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 130px;
+    margin-bottom: 31px;
+  }
+  .home__desc {
+    margin-top: 0;
+  }
+  .home__lang {
+    display: block;
+    position: relative;
+    bottom: 28px;
+    left: 26px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #828282;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    margin: 0;
+  }
+  .home__lang-eng {
+    color: black;
+  }
+  .home__lang:hover, .home__lang:focus {
+    cursor: pointer;
+  }
+  .home__img {
+    width: 540px;
+    height: 387px;
+    background: url("../img/home.jpg") no-repeat center;
+    margin-bottom: 104px;
+  }
+  .about-me__content {
+    width: 485px;
+    padding-top: 120px;
+    padding-bottom: 107px;
+  }
+  .skills__title {
+    margin-bottom: 69px;
+    padding-top: 110px;
+  }
+  .skills__intro {
+    margin-bottom: 83.5px;
+  }
+  .skills__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 110px;
+  }
+  .card__img {
+    margin-bottom: 26px;
+  }
+  .card__name {
+    margin-bottom: 41.5px;
+  }
+  .card__stars {
+    margin-bottom: 0;
+  }
+  .portfolio__title {
+    padding-top: 112px;
+    margin-bottom: 47px;
+  }
+  .portfolio__img {
+    width: 550px;
+    height: auto;
+    margin-bottom: 45px;
+  }
+  .portfolio__page-name {
+    padding-bottom: 100px;
+  }
+  .contacts__info {
+    margin-top: 114px;
+    margin-bottom: 123px;
+  }
+  .contacts__title {
+    margin-bottom: 26px;
+  }
+  .contacts__desc {
+    margin-bottom: 30px;
+  }
+  .contacts__button {
+    margin-bottom: 86px;
+  }
+  .contacts__links {
+    margin-bottom: 46px;
+  }
+  .contacts__message {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
 @media (min-width: 996px) {
   .layout {
     width: 940px;
