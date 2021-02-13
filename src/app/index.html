@@ -6,5 +6,261 @@
     <title>Designer Portfolio Layout</title>
   </head>
 
-  <body></body>
+  <body class="body">
+    <div id="home"></div>
+    <header class="header header__layout">
+      <div class="header-mobile header-mobile__layout">
+        <div class="menu">
+          <button class="menu__button">
+            <span
+              class="menu__button-content menu__button-content--show"
+            ></span>
+            <span
+              class="menu__button-content menu__button-content--hide"
+            ></span>
+          </button>
+          <div class="menu__overlay">
+            <nav class="navigation__layout">
+              <ul class="navigation__list">
+                <li class="navigation__link"><a href="#home">Home</a></li>
+                <li class="navigation__link">
+                  <a href="#about-me">About me</a>
+                </li>
+                <li class="navigation__link"><a href="#skills">Skills</a></li>
+                <li class="navigation__link">
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="navigation__link">
+                  <a href="#contacts">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu__languages">
+              <a class="menu__language" href="#">Ru</a> |
+              <a class="menu__language menu__language--active" href="#">Eng</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero__layout">
+          <div class="hero__text">
+            <h1 class="hero__title">Denis<br />Novik</h1>
+            <div class="hero__description">
+              UX | UI designer<br />24 years old, Minsk
+            </div>
+          </div>
+          <div class="hero__image-layout">
+            <img
+              class="hero__image"
+              src="./assets/images/hero.jpg"
+              width="317"
+              height="478"
+              alt="Denis"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header-desktop header-desktop__layout">
+        <div class="header-desktop__content">
+          <nav class="navigation__layout">
+            <ul class="navigation__list">
+              <li class="navigation__link"><a href="#home">Home</a></li>
+              <li class="navigation__link"><a href="#about-me">About me</a></li>
+              <li class="navigation__link"><a href="#skills">Skills</a></li>
+              <li class="navigation__link">
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li class="navigation__link"><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="hero__layout">
+            <div class="hero__text">
+              <h1 class="hero__title">Denis<br />Novik</h1>
+              <div class="hero__description">
+                UX | UI designer<br />24 years old, Minsk
+              </div>
+              <div class="hero__languages">
+                <a class="hero__language" href="#">Ru</a> |
+                <a class="hero__language hero__language--active" href="#"
+                  >Eng</a
+                >
+              </div>
+            </div>
+            <div class="hero__image-layout">
+              <img
+                class="hero__image"
+                src="./assets/images/hero-desktop.jpg"
+                width="944"
+                height="387"
+                alt="Denis"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="about-me"></div>
+      <section class="about-me__layout">
+        <div class="about-me__content">
+          <h2 class="about-me__title">About me</h2>
+          <div class="about-me__description">
+            <p>
+              Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in
+              design and everything connected with it.
+            </p>
+            <p>
+              I'm studying at courses "Web and mobile design interfaces" in
+              IT-Academy.
+            </p>
+            <p>Ready to implement excellent projects with wonderful people.</p>
+          </div>
+        </div>
+      </section>
+      <div id="skills"></div>
+      <section class="skills skills__layout">
+        <div class="skills__content">
+          <h2 class="skills__title">Skills</h2>
+          <div class="skills__description">
+            <p>I work in such programs as</p>
+          </div>
+          <div class="skills__list">
+            <div class="skill skill__layout">
+              <img
+                class="skill__image"
+                src="./assets/images/photoshop.png"
+                alt="Photoshop icon"
+              />
+              <h3 class="skill__title">Adobe Photoshop</h3>
+              <div class="rate__layout">
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star"></div>
+              </div>
+            </div>
+            <div class="skill skill__layout">
+              <img
+                class="skill__image"
+                src="./assets/images/adobe-illustrator.png"
+                alt="Adobe Illustrator icon"
+              />
+              <h3 class="skill__title">Adobe Illustrator</h3>
+              <div class="rate__layout">
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star"></div>
+                <div class="rate__star"></div>
+              </div>
+            </div>
+            <div class="skill skill__layout">
+              <img
+                class="skill__image"
+                src="./assets/images/after-effects.png"
+                alt="Adobe After Effects icon"
+              />
+              <h3 class="skill__title">Adobe After Effects</h3>
+              <div class="rate__layout">
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star"></div>
+              </div>
+            </div>
+            <div class="skill skill__layout">
+              <img
+                class="skill__image"
+                src="./assets/images/figma.png"
+                alt="Figma icon"
+              />
+              <h3 class="skill__title">Figma</h3>
+              <div class="rate__layout">
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star rate__star--filled"></div>
+                <div class="rate__star"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="portfolio"></div>
+      <section class="portfolio portfolio__layout">
+        <div class="portfolio__content">
+          <h2 class="portfolio__title">Portfolio</h2>
+          <div class="example__layout">
+            <img
+              class="example__image"
+              src="./assets/images/fashion.jpg"
+              alt="Online fashion store - Homepage"
+              width="936"
+              height="510"
+              style="max-width: 936px"
+            />
+            <h3 class="example__title">
+              <a href="#">Online fashion store - Homepage</a>
+            </h3>
+          </div>
+          <div class="example__layout">
+            <img
+              class="example__image"
+              src="./assets/images/reebok.jpg"
+              alt="Reebok Store - Concept"
+              width="936"
+              height="510"
+              style="max-width: 936px"
+            />
+            <h3 class="example__title">
+              <a href="#">Reebok Store - Concept</a>
+            </h3>
+          </div>
+          <div class="example__layout">
+            <img
+              class="example__image"
+              src="./assets/images/braun.jpg"
+              alt="Braun Landing Page - Concept"
+              width="936"
+              height="510"
+              style="max-width: 936px"
+            />
+            <h3 class="example__title">
+              <a href="#">Braun Landing Page - Concept</a>
+            </h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="contacts"></div>
+    <footer class="footer footer__layout">
+      <div class="footer__content">
+        <h2 class="footer__title">Contacts</h2>
+        <div class="footer__description">
+          <p>Want to know more or just chat?<br />You are welcome!</p>
+        </div>
+        <div class="footer__button-layout">
+          <button class="footer__button">Send message</button>
+        </div>
+        <div class="links__layout">
+          <a class="links__link" href="#"
+            ><div class="links__logo links__logo--linkedin"></div
+          ></a>
+          <a class="links__link" href="#"
+            ><div class="links__logo links__logo--instagram"></div
+          ></a>
+          <a class="links__link" href="#"
+            ><div class="links__logo links__logo--behance"></div
+          ></a>
+          <a class="links__link" href="#"
+            ><div class="links__logo links__logo--dribble"></div
+          ></a>
+        </div>
+        <div class="links__description">
+          <p>Like me on<br />LinkedIn, Instagram, Behance, Dribble</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
