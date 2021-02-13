@@ -1,8 +1,9 @@
 {
   "name": "designer-portfolio-landing",
   "version": "1.0.0",
+  "homepage": "https://livelife26.github.io/Designer-Portfolio-Layout",
   "main": "index.js",
-  "repository": "https://github.com/livelife26/Landing-page.git",
+  "repository": "https://github.com/livelife26/Designer-Portfolio-Layout.git",
   "author": "lovelaught <darya.bratova13@gmail.com>",
   "license": "MIT",
   "scripts": {
