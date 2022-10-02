@@ -1,10 +1,10 @@
 # Designer Portfolio Layout :man::art:
 
-**Web page of the designer's portfolio.**
+Web page of the designer's portfolio.
 
 ## Demo
 
-Online demo is available [here](https://livelife26.github.io/Designer-Portfolio-Layout/).
+Online demo is available [here](https://daryabratova.github.io/Designer-Portfolio-Layout/).
 
 ## Technologies
 
